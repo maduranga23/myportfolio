@@ -160,6 +160,9 @@ img{
                 img{
                     width: 70px;
                     transition: .5s;
+                    @media (max-width:990px){
+                       width: 50px;
+                    }
                 }
                 h5{
                     font-weight: 400;
@@ -167,6 +170,9 @@ img{
                     margin-top: 10px;
                     line-height: 20px;
                     padding: 0;
+                    @media (max-width:990px){
+                       font-size: 18px;
+                    }
                 }
 
                 &:hover{
