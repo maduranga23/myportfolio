@@ -8,6 +8,7 @@ body{
     background-color: $primary;
     font-family: "Poppins", sans-serif;
 color: white;
+position: relative;
     p{
         font-size: 15px;
         font-weight: 400;
@@ -33,7 +34,66 @@ ul{
             color: $primary;
         }
     }
+header{
+    .navbar{
+        padding: 20px 10px;
+        background-color: $primary;
+.navbar-brand{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    color: $secondary;
+    
+    @media(max-width:768px){
+        font-size: 18px;
+    }
+}
 
+.navbar-toggler{
+    .menu-icon,
+.close-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  z-index: 5;
+  filter: brightness(1) invert(1);
+}
+
+    .navbar-toggler-icon{
+        border: none;
+        box-shadow: none;
+        color: white;
+        position: absolute;
+    top: 25px;
+    z-index: 5;
+    background-color: white;
+    }
+}
+        .navbar-nav{
+
+            @media (max-width:990px){
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                left: 0;
+                top: 0;
+                background-color: $primary;
+                display: flex;
+    align-items: center;
+    justify-content: center;
+            }
+            .nav-item{
+                a.nav-link{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: white;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
     .hero{
         height: 600px;
         display: flex;
@@ -42,7 +102,11 @@ ul{
         background: linear-gradient(to top, $primary, rgba($primary, 0.8)), url(../img/hero-bg.jpg);
         background-position: center;
         background-size: cover;
-
+padding-top: 70px;
+@media (max-width:990px){
+    height: 800px;
+    text-align: center;
+}
         h1{
             font-size: 50px;
             font-weight: 600;
@@ -155,6 +219,7 @@ padding-bottom: 20px;
                         border-radius: 20px;
                         display: inline-block;
                     margin: 0 2px 8px 2px;
+                    
                     }
                 }
                 .btn-dark{
@@ -176,14 +241,22 @@ padding-bottom: 20px;
     .contact-item{
         display: flex;
         align-items: center;
+       margin: 5px 0;
         i{
-            font-size: 20px;
+            font-size: 24px;
             color: $secondary;
             margin-right: 5px;
+            @media(max-width:400px){
+                font-size: 18px;
+            }
         }
         a{
             color: white;
             font-size: 16px;
+            
+            @media(max-width:400px){
+                font-size: 13px;
+            }
         }
     }
 }

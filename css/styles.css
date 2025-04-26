@@ -5,6 +5,7 @@ body {
   background-color: #202733;
   font-family: "Poppins", sans-serif;
   color: white;
+  position: relative;
 }
 body p {
   font-size: 15px;
@@ -32,6 +33,66 @@ body .btn-border:hover {
   background-color: #7df5f2;
   color: #202733;
 }
+body header .navbar {
+  padding: 20px 10px;
+  background-color: #202733;
+}
+body header .navbar .navbar-brand {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  color: #7df5f2;
+}
+@media (max-width: 768px) {
+  body header .navbar .navbar-brand {
+    font-size: 18px;
+  }
+}
+body header .navbar .navbar-toggler .menu-icon,
+body header .navbar .navbar-toggler .close-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  z-index: 5;
+  -webkit-filter: brightness(1) invert(1);
+          filter: brightness(1) invert(1);
+}
+body header .navbar .navbar-toggler .navbar-toggler-icon {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  position: absolute;
+  top: 25px;
+  z-index: 5;
+  background-color: white;
+}
+@media (max-width: 990px) {
+  body header .navbar .navbar-nav {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    background-color: #202733;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+body header .navbar .navbar-nav .nav-item a.nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-left: 15px;
+}
 body .hero {
   height: 600px;
   display: -webkit-box;
@@ -47,6 +108,13 @@ body .hero {
   background: linear-gradient(to top, #202733, rgba(32, 39, 51, 0.8)), url(../img/hero-bg.jpg);
   background-position: center;
   background-size: cover;
+  padding-top: 70px;
+}
+@media (max-width: 990px) {
+  body .hero {
+    height: 800px;
+    text-align: center;
+  }
 }
 body .hero h1 {
   font-size: 50px;
@@ -206,15 +274,26 @@ body .contact .contact-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5px 0;
 }
 body .contact .contact-item i {
-  font-size: 20px;
+  font-size: 24px;
   color: #7df5f2;
   margin-right: 5px;
+}
+@media (max-width: 400px) {
+  body .contact .contact-item i {
+    font-size: 18px;
+  }
 }
 body .contact .contact-item a {
   color: white;
   font-size: 16px;
+}
+@media (max-width: 400px) {
+  body .contact .contact-item a {
+    font-size: 13px;
+  }
 }
 body footer {
   background-color: #202733;
