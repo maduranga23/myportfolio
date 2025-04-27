@@ -33,7 +33,9 @@
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#about">Maduranga Sandaruwan</a>
+          <a class="navbar-brand" target="_blank" href="#about"
+            >Maduranga Sandaruwan</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -53,16 +55,18 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" target="_blank" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" target="_blank" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" target="_blank" href="#projects"
+                  >Projects</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" target="_blank" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -76,8 +80,10 @@
             <h2>I'm a Web Developer</h2>
             <h1>Maduranga Sandaruwan</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Reprehenderit, placeat!
+              B.Sc. in Physical Science (Computer Science and Mathematics)
+              graduate with over a year of experience as a Web Developer. Proven
+              ability to build responsive, user-friendly websites and solve
+              complex problems with technical efficiency.
             </p>
             <a href="#contact" class="btn-border">Contact</a>
           </div>
@@ -157,7 +163,12 @@
                     <li>MySQL</li>
                     <li>Figma UI</li>
                   </ul>
-                  <a href="" target="_blank" class="btn-dark">View Website</a>
+                  <a
+                    href="https://ceylonexplorejourney.com/"
+                    target="_blank"
+                    class="btn-dark"
+                    >View Website</a
+                  >
                 </div>
               </div>
             </div>
@@ -175,7 +186,12 @@
                     <li>MySQL</li>
                     <li>Figma UI</li>
                   </ul>
-                  <a href="" target="_blank" class="btn-dark">View Website</a>
+                  <a
+                    href="https://biwonwaytravels.com"
+                    target="_blank"
+                    class="btn-dark"
+                    >View Website</a
+                  >
                 </div>
               </div>
             </div>
@@ -216,11 +232,13 @@
               </div>
             </div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Add Navigation -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
+          <div class="swiper-button-next custom-swiper-nav">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+          <div class="swiper-button-prev custom-swiper-nav">
+            <i class="bi bi-arrow-left"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -229,33 +247,39 @@
         <div class="row justify-content-center">
           <h5 class="section-title">Contact</h5>
           <p class="text-center mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-            repellendus.
+            Have a project in mind or just want to say hi? Feel free to reach
+            out.<br />I'm always open to new opportunities and collaborations.
           </p>
         </div>
         <div class="row col-lg-8 offset-lg-2 g-3">
           <div class="col-lg-6">
             <div class="contact-item">
               <i class="fa fa-phone"></i>
-              <a href="tel">+94 759732875</a>
+              <a href="tel:+94 759732875">+94 759732875</a>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="contact-item">
               <i class="fa fa-envelope"></i>
-              <a href="tel">maduranga.sandharuwan2028@gmail.com</a>
+              <a href="mailto:maduranga.sandharuwan2018@gmail.com"
+                >maduranga.sandharuwan2018@gmail.com</a
+              >
             </div>
           </div>
           <div class="col-lg-6">
             <div class="contact-item">
               <i class="bi bi-linkedin"></i>
-              <a href="tel">+94 759732875</a>
+              <a href="https://www.linkedin.com/in/madurangasandaruwan"
+                >https://www.linkedin.com/in/madurangasandaruwan</a
+              >
             </div>
           </div>
           <div class="col-lg-6">
             <div class="contact-item">
               <i class="bi bi-github"></i>
-              <a href="tel">+94 759732875</a>
+              <a href="https://www.github.com/maduranga23"
+                >https://www.github.com/maduranga23</a
+              >
             </div>
           </div>
         </div>
@@ -278,10 +302,7 @@
         spaceBetween: 20,
         loop: true,
         autoplay: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
