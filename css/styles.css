@@ -231,6 +231,8 @@ body .projects .project-item img {
   height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 body .projects .project-item .content {
   padding: 20px 20px 40px 20px;
@@ -271,6 +273,10 @@ body .projects .project-item .content .btn-dark {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
+}
+body .projects .project-item:hover img {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
 }
 body .contact {
   padding: 50px 0;
